@@ -1,0 +1,154 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.fp-block{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.fp-card{
+	width: 100%;
+	text-align: left;
+	margin-bottom: 2em;
+	display: inline-flex;
+}
+.fp-card .profile-img{
+	width:150px;
+	height:150px;
+	display: inline-block;
+    background-size: contain;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat:no-repeat;
+}
+/*Circle 1 Styles*/
+.circle-1{
+}
+.circle-1 > .fp-card{
+	border-radius:0.23em;
+	box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+}
+.circle-1 > .fp-card .profile-img{
+	margin: 1.25em;
+    border-radius:50%;
+}
+/*Circle 2 Styles*/
+.circle-2 > .fp-card .profile-img{
+    border-radius:50%;
+	margin: 1em;
+}
+
+
+/*Square 1 Styles*/
+.square-1{
+	padding: 0px;
+}
+.square-1 > .fp-card{
+	box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+}
+.square-1 > .fp-card .profile-img{
+	margin: 1.25em;
+}
+/*Circle 2 Styles*/
+.square-2 > .fp-card .profile-img{
+	margin: 1.25em;
+}
+
+.profile-content{
+	margin:20px;
+}
+
+.profile-content small{
+	display: block;
+}
+.profile-content small .dashicons{
+	padding-top: 4px;
+}
+
+.profile-content h4, .profile-content h5 {
+    margin: .25em 0;
+}
+
+@media only screen and (min-width: 768px){
+	.entry .entry-content > .fp-block, .entry .entry-summary > .fp-block {
+		max-width: 100%; 
+	}
+	
+	.fp-card{
+		width: 46%;
+		text-align: center;
+		display: block;
+	}
+	.fp-card .profile-img{
+		width:150px;
+		height:150px;
+		margin: 0 auto;
+	}
+	
+	/*Circle 1 Styles*/
+	.circle-1{
+		padding-bottom: 100px;
+	}
+	.circle-1 > .fp-card{
+		border-radius:0;
+		box-shadow:none;
+		margin-bottom:150px;
+	} 
+	.circle-1 > .fp-card >.profile-content{
+		border-radius:0.23em;
+		box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+		margin: -90px auto;
+    	padding: 100px 10px 10px 10px;
+	}
+	.circle-1 > .fp-card .profile-img{
+		margin:0 auto;
+		border-radius:50%;
+	}
+	/*Circle 2 Styles*/
+	.circle-2 > .fp-card{
+		padding:20px;
+		margin-bottom: 20px !important;
+		
+	}
+	.circle-2 > .fp-card .profile-img{
+		border-radius:50%;
+		margin:0px;
+	}
+	/*Square 1 Styles*/
+	.square-1{
+		padding-bottom: 100px;
+	}
+	.square-1 > .fp-card{
+		box-shadow:none;
+		margin-bottom:150px;
+	}
+	.square-1 > .fp-card >.profile-content{
+		border-radius:0;
+		box-shadow:0px 5px 10px rgba(0,0,0,0.5);
+		margin: -90px auto;
+    	padding: 100px 10px 10px 10px;
+	}
+	.square-1 > .fp-card .profile-img{
+		margin:0px auto;
+	}
+	/*Circle 2 Styles*/
+	.square-2 > .fp-card .profile-img{
+		margin: 0px;
+	}
+	.square-2 > .fp-card{
+		padding:20px;
+		margin-bottom: 20px !important;
+	}
+}
+@media only screen and (min-width: 1168px){
+	.entry .entry-content > .fp-block, .entry .entry-summary > .fp-block {
+		max-width: 100%;
+	}
+	.fp-card{
+		width: 31%;
+		text-align: center;
+	}
+}
