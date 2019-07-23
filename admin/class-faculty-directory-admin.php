@@ -90,8 +90,8 @@ class Faculty_Directory_Admin {
 				$className .= ' align' . $block['align'];
 			}
 			
-			if( file_exists( plugin_dir_path( dirname( __FILE__ ) ) ."public/partials/content-{$slug}.php" ) ) {
-				include( plugin_dir_path( dirname( __FILE__ ) ) ."public/partials/content-{$slug}.php" );
+			if( file_exists( plugin_dir_path( dirname( __FILE__ ) ) ."public/partials/block-{$slug}.php" ) ) {
+				include( plugin_dir_path( dirname( __FILE__ ) ) ."public/partials/block-{$slug}.php" );
 			}
 			/*USE BELOW IF GUTENBERG IS DIFFERENT FROM FRONT-END*/
 			/* 

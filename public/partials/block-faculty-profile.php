@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Name: Promotion
+ * Block Name: Faculty Profile
  *
  * This is the template that displays the public faculty profile block.
  */
@@ -40,19 +40,21 @@ $post_objects = get_field('profiles');
 			
 			<div class="fp-card">
 				<?php 
-				if( get_field('thumbnail_photo', $post_object->ID) ): ?>
-					<div class="profile-img" style="background-image: url(<?php echo get_field('thumbnail_photo', $post_object->ID); ?>);"></div>
+				if( get_field('fd_image', $post_object->ID) ): ?>
+					<div class="profile-img" style="background-image: url(<?php echo get_field('fd_image', $post_object->ID); ?>);"></div>
+				<?php else: ?>
+				<div class="profile-img"><span class="dashicons dashicons-admin-users"></span></div>
 				<?php endif; ?>
 				<div class="profile-content">
-					<h4><?php the_field('first_name', $post_object->ID); ?> <?php the_field('last_name', $post_object->ID); ?></h4>
-					<h5><?php the_field('academic_title', $post_object->ID); ?></h5>
+					<h4><?php the_field('fd_first_name', $post_object->ID); ?> <?php the_field('fd_last_name', $post_object->ID); ?></h4>
+					<h5><?php the_field('fd_academic_title', $post_object->ID); ?></h5>
 				<?php if( get_field('fd_email', $post_object->ID) ): ?>
 					<small><span class="dashicons dashicons-email-alt"></span> <?php the_field('fd_email', $post_object->ID); ?></small>
 				<?php endif; ?>
 					<?php if( get_field('fd_phone_number', $post_object->ID) ): ?>
 					<small><span class="dashicons dashicons-phone"></span> <?php the_field('fd_phone_number', $post_object->ID); ?></small>
 				<?php endif; ?>
-					<a href="<?php echo get_permalink($post_object->ID); ?>" title="Link to <?php the_field('first_name', $post_object->ID); ?> <?php the_field('last_name', $post_object->ID); ?>'s profile page">View Profile ></a>
+					<a href="<?php echo get_permalink($post_object->ID); ?>" title="Link to <?php the_field('fd_first_name', $post_object->ID); ?> <?php the_field('fd_last_name', $post_object->ID); ?>'s profile page">View Profile ></a>
 				</div>
 			</div>
 		<?php endforeach; ?>
