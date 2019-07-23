@@ -1,1 +1,1 @@
-# wp-fd-directory
+# wp-faculty-directory
