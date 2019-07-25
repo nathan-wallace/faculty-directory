@@ -8,7 +8,6 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
  * @since             1.0.0
  * @package           Faculty_Directory
  *
@@ -17,7 +16,7 @@
  * Plugin URI:        http://wallacecreative.agency/
  * GitHub Plugin URI: https://github.com/afragen/github-updater
  * Description:       Adds a Profile content-type and associated Gutenberg blocks for disaplying faculty and staff.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Wallace Creative
  * Author URI:        https://wallacecreative.agency
  * License:           GPL-2.0+
@@ -36,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'FACULTY_DIRECTORY', '1.0.0' );
+define( 'FACULTY_DIRECTORY', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
