@@ -14,7 +14,8 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Faculty and Staff Directory
- * Plugin URI:        http://example.com/faculty-directory-uri/
+ * Plugin URI:        http://wallacecreative.agency/
+ * GitHub Plugin URI: https://github.com/afragen/github-updater
  * Description:       Adds a Profile content-type and associated Gutenberg blocks for disaplying faculty and staff.
  * Version:           1.0.0
  * Author:            Wallace Creative
