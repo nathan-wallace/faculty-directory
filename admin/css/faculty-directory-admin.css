@@ -15,6 +15,15 @@
 	margin-bottom: 2em;
 	display: inline-flex;
 }
+.fd-button{
+	padding:5px 8px;
+	border:3px solid;
+	text-decoration: none !important;
+	margin: 10px auto 5px;
+    position: relative;
+    display: inline-block;
+}
+
 .fp-card .profile-img{
 	width:150px;
 	height:150px;
@@ -23,6 +32,17 @@
     background-origin: content-box;
     background-position: center;
     background-repeat:no-repeat;
+	background-color: #fff;
+}
+
+.fp-card .profile-img span{
+	width:150px;
+	height:150px;
+	line-height: 150px;
+    border: 1px solid #3d3d3d;
+	font-size: -webkit-xxx-large;
+	display: inline-block;
+	color:#3d3d3d;
 }
 /*Circle 1 Styles*/
 .circle-1{
