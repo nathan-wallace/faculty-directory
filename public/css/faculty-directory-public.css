@@ -15,6 +15,15 @@
 	margin-bottom: 2em;
 	display: inline-flex;
 }
+.fd-button{
+	padding:5px 8px;
+	border:3px solid;
+	text-decoration: none !important;
+	margin: 10px auto 5px;
+    position: relative;
+    display: inline-block;
+}
+
 .fp-card .profile-img{
 	width:150px;
 	height:150px;

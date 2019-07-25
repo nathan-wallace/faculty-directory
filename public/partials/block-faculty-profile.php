@@ -12,7 +12,6 @@ $text_color = get_field('text_color') ?:'#3d3d3d';
 $accent_color = get_field('accent_color') ?:'#cc0000';
 $profile_style = get_field('profile_style') ?:'circle-1';
 $post_objects = get_field('profiles');
-	$post_objects = get_field('profiles');
 
 	if( $post_objects ): ?>
 		<style type="text/css">
@@ -22,6 +21,16 @@ $post_objects = get_field('profiles');
 			}
 			#<?php echo $id; ?> .fp-card h4{
 				color:<?php echo $accent_color; ?>;
+			}
+			#<?php echo $id; ?> .fd-button{
+				color:#fff;
+				border-color:<?php echo $accent_color; ?>;
+				background-color:<?php echo $accent_color; ?>;
+			}
+			#<?php echo $id; ?> .fd-button:hover{
+				color:<?php echo $accent_color; ?>;
+				border-color:<?php echo $accent_color; ?>;
+				background-color:#fff;
 			}
 			
 			@media only screen and (min-width: 768px){
@@ -54,7 +63,7 @@ $post_objects = get_field('profiles');
 					<?php if( get_field('fd_phone_number', $post_object->ID) ): ?>
 					<small><span class="dashicons dashicons-phone"></span> <?php the_field('fd_phone_number', $post_object->ID); ?></small>
 				<?php endif; ?>
-					<a href="<?php echo get_permalink($post_object->ID); ?>" title="Link to <?php the_field('fd_first_name', $post_object->ID); ?> <?php the_field('fd_last_name', $post_object->ID); ?>'s profile page">View Profile ></a>
+					<a class="fd-button" href="<?php echo get_permalink($post_object->ID); ?>" title="Link to <?php the_field('fd_first_name', $post_object->ID); ?> <?php the_field('fd_last_name', $post_object->ID); ?>'s profile page">View Profile</a>
 				</div>
 			</div>
 		<?php endforeach; ?>
