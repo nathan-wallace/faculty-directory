@@ -59,7 +59,7 @@ class Faculty_Directory_Admin {
 			// check function exists
 			if( function_exists('acf_register_block') ) {
 
-				// register a testimonial block
+				// register a faculty profile block
 				acf_register_block(array(
 					'name'				=> 'faculty-profile',
 					'title'				=> __('Faculty Profile'),
@@ -77,7 +77,7 @@ class Faculty_Directory_Admin {
 		
 		function faculty_directory_acf_block_render_callback( $block, $content = '', $is_preview = false) {
 
-			// convert name ("acf/testimonial") into path friendly slug ("faculty-profile")
+			// convert name ("acf/faculty-profile") into path friendly slug ("faculty-profile")
 			$slug = str_replace('acf/', '', $block['name']);
 			
 			// include a template part from within the "template-parts/block" folder

@@ -8,7 +8,7 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @since             1.0.0
+ * @since             1.0.2
  * @package           Faculty_Directory
  *
  * @wordpress-plugin
@@ -16,7 +16,7 @@
  * Plugin URI:        https://github.com/nathan-wallace/faculty-directory.git
  * GitHub Plugin URI: https://github.com/nathan-wallace/faculty-directory.git
  * Description:       Adds a Profile content-type and associated Gutenberg blocks for disaplying faculty and staff.
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Wallace Creative
  * Author URI:        https://wallacecreative.agency
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'FACULTY_DIRECTORY', '1.0.1' );
+define( 'FACULTY_DIRECTORY', '1.0.2' );
 
 /**
  * The code that runs during plugin activation.
